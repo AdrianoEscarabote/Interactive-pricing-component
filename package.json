@@ -1,0 +1,11 @@
+{
+  "name": "interactive-pricing-component",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
