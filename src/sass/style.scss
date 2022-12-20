@@ -1,0 +1,132 @@
+@import "./colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+@mixin flex($display, $align-items, $justify-items, $flex-direction) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-items;
+  flex-direction: $flex-direction;
+}
+
+@mixin font($font-weight, $font-size, $line-height, $letter-spacing, $color) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: $VeryPaleBlue;
+  font-size: 15px;
+  @include flex(flex, center, center, column);
+  background: url('../../images/bg-pattern.svg') no-repeat;
+  background-size: 100% 50vmin;
+
+  main {
+    @include flex(flex, center, center, column);
+    gap: 85px;
+
+
+    article {
+      width: 100%;
+      max-width: 395px;
+      height: 145px;
+      background: url('../../images/pattern-circles.svg') center no-repeat;
+
+      @include flex(flex, center, center, column);
+      gap: 12px;
+
+      h1 {
+        @include font(800, 28px, 38px, unset, $DarkDesaturatedBlue);
+      }
+
+      p {
+        @include font(600, 15px, 20px, unset, $GrayishBlue);
+      }
+    }
+
+    .pricing-component {
+      width: 540px;
+      height: 397px;
+      background: $White;
+      box-shadow: 0px 20px 30px -5px #7f89b927;
+      border-radius: 8px;
+
+      .infos {
+        padding: 40px 46px;
+        @include flex(flex, center, space-between, row);
+
+        .views {
+          p {
+            @include font(800, 14px, 19px, 2px, $GrayishBlue);
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+
+        .price {
+          p {
+            @include font(600, 16px, 22px, unset, $GrayishBlue);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            span {
+              @include font(800, 40px, 55px, -1px, $DarkDesaturatedBlue);
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      .input {
+        width: 100%;
+        padding: 0px 46px;
+        @include flex(flex, center, center, column);
+
+        input {
+          width: 100%;
+        }
+
+      }
+
+      .billing {
+        @include flex(flex, flex-end, end, row);
+        padding: 0px 46px;
+      }
+
+      .details {
+        border-top: 1px solid rgba(63, 63, 63, 0.5);
+        @include flex(flex, center, space-between, row);
+        padding: 40px 46px;
+        ul {
+          li {
+            @include flex(flex, center, flex-start, row);
+            p {
+              @include font(600, 12px, 16px, unset, $GrayishBlue);
+            }
+          }
+        }
+
+        button {
+          @include font(800, 12px, 16px, unset, $PaleBlue);
+          border-radius: 20.5px;
+          background-color: $DarkDesaturatedBlue;
+          max-width: 170px;
+          height: 47px;
+          width: 100%;
+          border: 1px solid transparent;
+        }         
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .pricing-component {
+    width: 100% !important;
+  }
+}
