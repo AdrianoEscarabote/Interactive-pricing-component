@@ -92,29 +92,89 @@ body main .pricing-component .input {
   justify-content: center;
   flex-direction: column;
 }
-body main .pricing-component .input input {
+body main .pricing-component .input input[type=range] {
+  all: unset;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
   width: 100%;
+  background-color: #ECF0FB;
+}
+body main .pricing-component .input input[type=range]::-webkit-slider-thumb,
+body main .pricing-component .input input[type=range]::-moz-range-thumb,
+body main .pricing-component .input input[type=range]::-ms-range-thumb {
+  width: 100px;
+  height: 70px;
+  all: unset;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid transparent;
+  background-color: #10d5c2;
+  background-image: url("../../images/icon-slider.svg");
 }
 body main .pricing-component .billing {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: end;
   flex-direction: row;
-  padding: 0px 46px;
+  padding: 40px 46px 42px 46px;
+  gap: 10px;
+}
+body main .pricing-component .billing p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: unset;
+  color: #858fad;
+  margin: 0;
+}
+body main .pricing-component .billing p .discount {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: unset;
+  color: #ff8c66;
+  background: #feece7;
+  border-radius: 9.5px;
+  padding: 4.2px 9px;
+  margin-left: 6px;
+}
+body main .pricing-component .billing .form-check {
+  padding: 0;
+}
+body main .pricing-component .billing .form-check .form-check-input {
+  background-color: #CFD8EF;
+  width: 43px;
+  height: 22px;
+  border: 1px solid transparent;
+  box-shadow: unset;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  margin: 0;
+}
+body main .pricing-component .billing .form-check .form-check-input:checked {
+  background-color: #10d5c2;
 }
 body main .pricing-component .details {
-  border-top: 1px solid rgba(63, 63, 63, 0.5);
+  border-top: 1px solid #ECF0FB;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 40px 46px;
+  padding: 33px 46px;
+}
+body main .pricing-component .details ul {
+  display: flex;
+  align-items: unset;
+  justify-content: unset;
+  flex-direction: column;
+  gap: 14px;
 }
 body main .pricing-component .details ul li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+  gap: 16px;
 }
 body main .pricing-component .details ul li p {
   font-weight: 600;
