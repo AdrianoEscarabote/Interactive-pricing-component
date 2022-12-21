@@ -1,0 +1,223 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap";
+body {
+  background: url("bg-pattern.303250fb.svg") 0 0 / 100% 50vmin no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+  display: flex;
+}
+
+body main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+  display: flex;
+}
+
+body main article {
+  width: 100%;
+  max-width: 395px;
+  height: 145px;
+  background: url("pattern-circles.2cae047b.svg") center no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+body main article h1 {
+  letter-spacing: unset;
+  color: #293356;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38px;
+}
+
+body main article p {
+  letter-spacing: unset;
+  color: #858fad;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+body main .pricing-component {
+  width: 540px;
+  height: 397px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 20px 30px -5px #7f89b927;
+}
+
+body main .pricing-component .infos {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 46px;
+  display: flex;
+}
+
+body main .pricing-component .infos .views p {
+  letter-spacing: 2px;
+  color: #858fad;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 19px;
+}
+
+body main .pricing-component .infos .price p {
+  letter-spacing: unset;
+  color: #858fad;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+}
+
+body main .pricing-component .infos .price p span {
+  letter-spacing: -1px;
+  color: #293356;
+  text-align: right;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
+body main .pricing-component .input {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 46px;
+  display: flex;
+}
+
+body main .pricing-component .input input[type="range"] {
+  all: unset;
+  appearance: none;
+  width: 100%;
+  background-color: #ecf0fb;
+  display: inline-block;
+}
+
+body main .pricing-component .input input[type="range"]::-webkit-slider-thumb, body main .pricing-component .input input[type="range"]::-moz-range-thumb, body main .pricing-component .input input[type="range"]::-ms-range-thumb {
+  width: 100px;
+  height: 70px;
+  all: unset;
+  appearance: none;
+  background-color: #10d5c2;
+  background-image: url("icon-slider.18214d3d.svg");
+  border: 1px solid #0000;
+}
+
+body main .pricing-component .billing {
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 46px 42px;
+  display: flex;
+}
+
+body main .pricing-component .billing p {
+  letter-spacing: unset;
+  color: #858fad;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+body main .pricing-component .billing p .discount {
+  letter-spacing: unset;
+  color: #ff8c66;
+  background: #feece7;
+  border-radius: 9.5px;
+  margin-left: 6px;
+  padding: 4.2px 9px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 14px;
+}
+
+body main .pricing-component .billing .form-check {
+  padding: 0;
+}
+
+body main .pricing-component .billing .form-check .form-check-input {
+  width: 43px;
+  height: 22px;
+  box-shadow: unset;
+  background-color: #cfd8ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  border: 1px solid #0000;
+  margin: 0;
+}
+
+body main .pricing-component .billing .form-check .form-check-input:checked {
+  background-color: #10d5c2;
+}
+
+body main .pricing-component .details {
+  border-top: 1px solid #ecf0fb;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 46px;
+  display: flex;
+}
+
+body main .pricing-component .details ul {
+  align-items: unset;
+  justify-content: unset;
+  flex-direction: column;
+  gap: 14px;
+  display: flex;
+}
+
+body main .pricing-component .details ul li {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+body main .pricing-component .details ul li p {
+  letter-spacing: unset;
+  color: #858fad;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+body main .pricing-component .details button {
+  letter-spacing: unset;
+  color: #bdccff;
+  max-width: 170px;
+  height: 47px;
+  width: 100%;
+  background-color: #293356;
+  border: 1px solid #0000;
+  border-radius: 20.5px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+@media (max-width: 550px) {
+  .pricing-component {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
