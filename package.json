@@ -2,10 +2,13 @@
   "name": "interactive-pricing-component",
   "source": "index.html",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel public/index.html",
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
