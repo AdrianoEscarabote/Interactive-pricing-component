@@ -1,10 +1,14 @@
 import React, { Fragment } from "react";
+import { Title, ArticleStyled, P } from "../StyledComponents/main/ArticleStyle";
 
 export default function Article() {
+
   return (
-    <article>
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
-    </article>
+    <ArticleStyled>
+      <Title>
+        Simple, traffic-based pricing
+      </Title>
+      <P>Sign-up for our 30-day trial. No credit card required.</P>
+    </ArticleStyled>
   )
 }

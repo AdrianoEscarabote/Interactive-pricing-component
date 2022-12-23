@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
 import Article from "./Article";
-import { iconCheck } from "../../images/icon-check.svg";
+import Pricing from "./Pricing";
 
 class Main extends React.Component {
   render() {
     return (
       <Fragment>
         <Article />
-        <h1>oi</h1>
-        <img src={iconCheck} alt="" aria-hidden="true" />   
+        <Pricing />
       </Fragment>
     )
   }
