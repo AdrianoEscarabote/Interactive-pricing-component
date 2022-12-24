@@ -20,6 +20,16 @@ const Info = styled.div`
     }
 
     .price {
+      display: flex;
+      align-items: center;  
+      span {
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 3.4375rem;
+        letter-spacing: -0.0625rem;
+        color: #293356;
+        text-align: right;
+      }
       p {
         font-weight: 600;
         font-size: 1rem;
@@ -30,14 +40,6 @@ const Info = styled.div`
         align-items: center;
         gap: 0.5rem;
 
-        span {
-          font-weight: 800;
-          font-size: 2.5rem;
-          line-height: 3.4375rem;
-          letter-spacing: -0.0625rem;
-          color: #293356;
-          text-align: right;
-        }
       }
     }
   }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const BillingStyle = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   padding: 40px 46px 42px 46px;
   gap: 10px;
@@ -27,22 +27,57 @@ const BillingStyle = styled.div`
     }
   }
 
-  .form-check {
-    padding: 0;
+  .switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  
+  .switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
 
-    .form-check-input {
-      background-color: #CFD8EF;
-      width: 43px;
-      height: 22px;
-      border: 1px solid transparent;
-      box-shadow: unset;
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-      margin: 0;
+  .switch--shadow + label {
+    padding: 2px;
+    width: 46px;
+    height: 25px;
+    background-color: #dddddd;
+    border-radius: 60px;
+  }
 
-      &:checked {
-        background-color: #10d5c2;
-      }
-    }
+  .switch--shadow + label:before,
+  .switch--shadow + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: '';
+  }
+  .switch--shadow + label:before {
+    right: 1px;
+    background-color: #CFD8EF;
+    border-radius: 60px;
+    transition: all 0.4s;
+  }
+  .switch--shadow + label:after {
+    height: 18px;
+    width: 18px;
+    top: 3.4px;
+    left: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  .switch--shadow:checked + label:before {
+    background-color: #7AEADF;
+  }
+  .switch--shadow:checked + label:after {
+    transform: translateX(22px);
   }
 `
 

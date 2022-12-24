@@ -6,6 +6,10 @@ const pricingStyle = styled.div`
   background-color: #ffffff;
   box-shadow: 0rem 1.25rem 1.875rem -0.3125rem #7f89b927;
   border-radius: 0.5rem;
+
+  @media (max-width: 550px) {
+    width: 100% !important;
+  }
 `
 
 export default pricingStyle;

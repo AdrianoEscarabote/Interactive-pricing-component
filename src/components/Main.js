@@ -1,59 +1,61 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Article from "./Article";
 import Pricing from "./Pricing";
 
-class Main extends React.Component {
-  render() {
-    return (
-      <Fragment>
-        <Article />
-        <Pricing />
-      </Fragment>
-    )
+function Main() {
+  const [value, setValue] = useState(0)
+
+  const handleChangeInput = (e) => {
+    // linear gradient input range
+
+    let target = e.currentTarget
+
+    if (e.currentTarget.type !== "range") {
+      target = document.getElementById("range")
+    }
+    const min = target.min
+    const max = target.max
+    const val = target.value
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+    changeContent(val)
   }
+
+  const changeContent = (val) => {
+    // changing texts
+    const numberView = document.getElementById("numberView")
+    const price = document.getElementById("number")
+
+    const radio = document.getElementById("switch-shadow")
+    console.log(radio.checked)
+
+    setValue((value) => value = val)
+
+    radio.checked ? document.getElementById("typePlan").innerText = " /yearly" : document.getElementById("typePlan").innerText = " /month"
+
+    if (value >= 0 && value < 25) {
+      radio.checked ? price.innerText = "$6.00" : price.innerText = "$8.00"
+      numberView.innerText = "10K"
+    } else if (value >= 25 && value < 50) {
+      radio.checked ? price.innerText = "$9.00" : price.innerText = "$12.00"
+      numberView.innerText = "50K"
+    } else if (value >= 50 && value < 75) {
+      numberView.innerText = "100K"
+      radio.checked ? price.innerText = "$12.00" : price.innerText = "$16.00"
+    } else if (value >= 75 && value < 95) {
+      numberView.innerText = "500K"
+      radio.checked ? price.innerText = "$18.00" : price.innerText = "$24.00"
+    } else if (value >= 95){
+      numberView.innerText = "1M"
+      radio.checked ? price.innerText = "$27.00" : price.innerText = "$36.00"
+    }
+  }
+
+  return (
+    <Fragment>
+      <Article />
+      <Pricing handleChange={handleChangeInput} />
+    </Fragment>
+  )
 }
 
 export default Main;
-
-/* return (
-    <Fragment>
-      <div class="pricing-component">
-        <div class="infos">
-          <div class="views">
-            <p><span id="numberView">100k</span> Pageviews</p>
-          </div>
-          <div class="price">
-            <p><span id="number">$ 16.00</span> /month</p>
-          </div>
-        </div>
-
-        <div class="input">
-          <input type="range" name="range" id="range">
-        </div>
-
-        <div class="billing">
-          <p>Monthly Billing</p>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-          </div>
-          <p>Yearly Billing <span class="discount">25% discount</span></p>
-        </div>
-
-        <div class="details">
-          <ul>
-            <li><img src={iconCheck} alt="" aria-hidden="true">
-              <p>Unlimited websites</p>
-            </li>
-            <li><img src={iconCheck} alt="" aria-hidden="true">
-              <p>100% data ownership</p>
-            </li>
-            <li><img src={iconCheck} alt="" aria-hidden="true">
-              <p>Email reports</p>
-            </li>
-          </ul>
-          <button>Start my trial</button>
-        </div>
-      </div>
-    </Fragment>
-  )*/

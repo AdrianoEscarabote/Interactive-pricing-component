@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 85px;
+    gap: 54px;
   }
 
   *,

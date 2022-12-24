@@ -29,10 +29,6 @@ const DetailsStyle = styled.div`
     }
   }
 
-  font-weight: ;
-    font-size: ;
-    line-height: ;
-
   button {
     font-weight: 800;
     font-size: 0.75rem;
@@ -44,6 +40,9 @@ const DetailsStyle = styled.div`
     height: 2.9375rem;
     width: 100%;
     border: 0.0625rem solid transparent;
+    &:hover {
+      color: #ffffff !Important;
+    }
   }
 `
 
