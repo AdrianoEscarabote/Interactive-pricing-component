@@ -6,13 +6,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 1.25rem; 
     font-family: 'Manrope', sans-serif;
-    background-color: #fafbff;
     font-size: 0.9375rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url('${bg_pattern}') no-repeat;
+    background: url('${bg_pattern}') no-repeat #fafbff;
     background-size: 100% 50vmin;
   }
 
@@ -85,6 +84,15 @@ const GlobalStyle = createGlobalStyle`
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
+    }
+  }
+
+  @media (max-width: 461px) {
+    body {
+      background-size: 100% 100vmin;
+    }
+    main {
+      gap: 32px;
     }
   }
 `

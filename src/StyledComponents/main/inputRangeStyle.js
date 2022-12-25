@@ -21,6 +21,7 @@ const Input = styled.input`
     border-radius: 50%; 
     cursor: pointer;
     background: url(${iconSlider}) no-repeat center #10d5c2;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
     &:hover {
       background-color: #24AEA1 !Important;
       transition: 0.8s;
@@ -33,6 +34,7 @@ const Input = styled.input`
     border-radius: 50%; 
     cursor: pointer;
     background: url(${iconSlider}) no-repeat center #10d5c2;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
     &:hover {
       transition: 0.8s;
       background-color: #24AEA1 !Important;

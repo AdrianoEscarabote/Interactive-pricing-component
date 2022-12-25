@@ -26,6 +26,7 @@ const P = styled.p`
   font-size: 15px;
   line-height: 20px;
   color: #858fad;
+  text-align: center;
 `
 
 export {Title, ArticleStyled, P} 

@@ -39,10 +39,16 @@ const DetailsStyle = styled.div`
     max-width: 10.625rem;
     height: 2.9375rem;
     width: 100%;
+    cursor: pointer;
     border: 0.0625rem solid transparent;
     &:hover {
       color: #ffffff !Important;
     }
+  }
+
+  @media(max-width: 462px) {
+    flex-direction: column;
+    gap: 32px;
   }
 `
 

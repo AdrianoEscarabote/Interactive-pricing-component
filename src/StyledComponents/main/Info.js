@@ -43,6 +43,16 @@ const Info = styled.div`
       }
     }
   }
+
+  @media (max-width: 461px) {
+    flex-direction: column;
+    position: relative;
+    .price {
+      position: absolute;
+      top: 140px;
+      gap: 10px;
+    }
+  }
 `
 
 export default Info;

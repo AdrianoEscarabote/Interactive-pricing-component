@@ -9,6 +9,7 @@ const pricingStyle = styled.div`
 
   @media (max-width: 550px) {
     width: 100% !important;
+    height: auto;
   }
 `
 

@@ -79,6 +79,12 @@ const BillingStyle = styled.div`
   .switch--shadow:checked + label:after {
     transform: translateX(22px);
   }
+
+  @media (max-width: 461px) {
+    padding: 40px 26px 42px 26px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
 `
 
 export default BillingStyle;
