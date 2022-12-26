@@ -1,8 +1,8 @@
-- Active Site [Click here ]()
+- Active Site [Click here](https://interactive-pricing-component-ruby.vercel.app/)
 
-# Video
+# GIF
 
-// 
+// gif here
 
 # Frontend Mentor - Interactive pricing component solution
 
@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Continued development
 
-
+I really liked the efficiency and simplicity of parcel, about styled-components despite having read a little about organization, I'm still having doubts about the best ways to organize the files! I thought it was really cool to develop this project with react, despite being a small and simple project, it was perfect to practice a little with new tools.
 
 ## Author
 
@@ -46,3 +46,4 @@ Users should be able to:
 - Frontend Mentor - [@AdrianoEscarabote](https://www.frontendmentor.io/profile/AdrianoEscarabote)
 - Instagram - [@ogdrian](https://www.instagram.com/ogdrian/)
 - Twitter - [@drianEscarabote](https://twitter.com/drianEscarabote)
+
