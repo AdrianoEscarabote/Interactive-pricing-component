@@ -1,8 +1,8 @@
 {
   "name": "interactive-pricing-component",
-  "source": "src/index.html",
+  "source": "dist/index.html",
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel dist/index.html",
     "build": "parcel build"
   },
   "devDependencies": {
