@@ -3,6 +3,8 @@ import bg_pattern from "../../images/bg-pattern.svg";
 
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
   body {
     padding: 1.25rem; 
     font-family: 'Manrope', sans-serif;
