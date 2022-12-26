@@ -9,13 +9,16 @@ import DetailsStyle from "../StyledComponents/main/DetailsStyle";
 export default function Pricing({ handleChange }) {
   return (
     <Fragment>
+      <div className="loader-wrapper">
+        <img src={iconCheck} alt="" aria-hidden="true" />
+      </div>
       <PricingStyle>
         <Info>
           <div className="views">
             <p><span id="numberView">100k</span> Pageviews</p>
           </div>
           <div className="price">
-          <span id="number">$ 16.00</span><p id="typePlan"> /month</p>
+            <span id="number">$ 16.00</span><p id="typePlan"> /month</p>
           </div>
         </Info>
 

@@ -95,6 +95,21 @@ const GlobalStyle = createGlobalStyle`
       gap: 32px;
     }
   }
+
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $StrongCyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(323deg) brightness(106%) contrast(101%);
+    }
+  }
 `
 
 export default GlobalStyle;
