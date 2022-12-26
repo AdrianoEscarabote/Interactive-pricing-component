@@ -2,7 +2,7 @@
 
 # GIF
 
-// gif here
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/101136987/209581611-adaaccc9-a797-4cd9-9b70-a00ebac63dac.gif)
 
 # Frontend Mentor - Interactive pricing component solution
 
